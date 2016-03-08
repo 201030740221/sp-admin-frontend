@@ -1,0 +1,69 @@
+@media print {
+  @page {
+    // size: landscape;
+    margin: 1em;
+  }
+  #sidebar {
+    display: none !important;
+  }
+  #navbar {
+    display: none !important;
+  }
+  #body {
+    background: white;
+    left: 0 !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    font-size: 12px;
+  }
+  .rubix-panel-controls {
+    display: none !important;
+  }
+  .messenger, .print-ignore {
+    display: none !important;
+  }
+  .container-fluid {
+    padding: 0 5px;
+  }
+
+  /* 页面定制样式 @tofishes */
+  .datepicker__input {
+    box-shadow: none !important;
+    border: 0 none !important;
+    padding: 0 !important;
+  }
+  .order-print-box {
+    line-height: 1.2;
+    p {
+      margin-bottom:2px;
+    }
+    .table td {
+      padding: 5px;
+      line-height: 1.2 !important;
+    }
+    .list-title {
+      margin: 0 0 5px;
+    }
+  }
+  .underline-input {
+    border: 0 none !important;
+  }
+  .print-ignore, #footer {
+    display: none !important;
+  }
+  .order-goods-name {
+    min-width: 6em;
+  }
+
+  input.amount-input ,
+  input.price-input {
+    border: 0 none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  td, th {
+    padding: 6px;
+    border: 1px solid #ccc !important;
+  }
+}

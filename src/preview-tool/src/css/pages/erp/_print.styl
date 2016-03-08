@@ -1,0 +1,57 @@
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    font-size: 12px;
+  }
+  a, a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr, img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+  p,span{
+    color: #000 !important;
+    font-weight: bold;
+  }
+  h2, h3 {
+    page-break-after: avoid; }
+  select {
+    background: #fff !important; }
+  #header,.aside-container ,.ant-breadcrumb,.click-btn,.return-btn{
+    display: none;
+  }
+  .main-container,.print_body {
+     width: 100%;
+  }
+  table td, table th {
+    background-color: #fff !important;
+    border: 1px solid #ddd !important;
+  }
+  .top_list{
+    border: 1px solid #ddd !important;
+  }
+  .btn > .caret, .dropup > .btn > .caret {
+    border-top-color: #000 !important; }
+  .label {
+    border: 1px solid #000; }
+  table {
+    border-collapse: collapse !important; }
+  .table-bordered th, .table-bordered td {
+    border: 1px solid #ddd !important; } }

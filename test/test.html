@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <title></title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <style type="text/css">
+        ._btn{
+            width: 87px;
+            height: 35px;
+            background: #E2E2E2;
+            font-size: 14px;
+            text-align: center;
+            line-height: 35px;
+            color: #EF8585;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        #_img{
+            display: none;
+        }
+        #myCanvas{
+            display: none;
+            border:1px solid #d3d3d3;
+        }
+    </style>
+
+</head>
+<body>
+
+<p>要使用的图片：</p>
+
+<input id='_input' type="text"/>
+<div id='_btn' class="_btn">生成毕业证</div>
+
+<img id="_img" src="_img.png" alt="tulip" />
+
+<p>Canvas:</p>
+
+<canvas id="myCanvas" width="300" height="150">
+
+</canvas>
+
+</body>
+<script>
+
+    //获取当前时间
+    function FormatDate (strTime) {
+        var date = new Date(strTime);
+        return date.getFullYear()+"年"+(date.getMonth()+1)+"月"+date.getDate()+'日';
+    }
+
+
+    // canvas处理
+    function convertCanvasToImage(myCanvas) {
+        var image = new Image();
+        image.src = myCanvas.toDataURL("image/png");
+        return image;
+    }
+    window.onload = function(){
+
+        /*时间*/
+        var _date = new Date();
+        var _current_time = FormatDate(_date);
+        console.log(_current_time);
+
+        var _btn = document.getElementById("_btn");
+        _btn.onclick = function(){
+
+            var _input_val = document.getElementById("_input").value;
+            console.log(_input_val);
+
+            var myCanvas=document.getElementById("myCanvas"),
+                _canvas=myCanvas.getContext("2d"),
+                _img=document.getElementById("_img");
+
+            _canvas.drawImage(_img,0,0);
+            _canvas.font="16px Georgia ";
+
+            var gradient=_canvas.createLinearGradient(0,0,myCanvas.width,0);
+            gradient.addColorStop("1.0","#000");
+            _canvas.fillStyle=gradient;
+            _canvas.fillText(_input_val,0,30);
+
+            var _image = convertCanvasToImage(myCanvas);
+
+            console.log(_image);
+            window.location.href = _image.src;
+        };
+
+    }
+
+</script>
+</html>

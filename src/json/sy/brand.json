@@ -1,0 +1,85 @@
+{
+  "status": 1,
+  "data":[
+    {
+      "id": 1,
+      "title":"品牌1",
+      "url":"http://www.baidu.com",
+      "description":"这是描述来的",
+      "order":50,
+      "isshow":1
+    },
+    {
+      "id": 1,
+      "title":"品牌1",
+      "url":"http://www.baidu.com",
+      "description":"这是描述来的",
+      "order":50,
+      "isshow":1
+    },
+    {
+      "id": 1,
+      "title":"品牌1",
+      "url":"http://www.baidu.com",
+      "description":"这是描述来的",
+      "order":50,
+      "isshow":1
+    },
+    {
+      "id": 1,
+      "title":"品牌1",
+      "url":"http://www.baidu.com",
+      "description":"这是描述来的",
+      "order":50,
+      "isshow":1
+    },
+    {
+      "id": 1,
+      "title":"品牌1",
+      "url":"http://www.baidu.com",
+      "description":"这是描述来的",
+      "order":50,
+      "isshow":1
+    },
+    {
+      "id": 1,
+      "title":"品牌1",
+      "url":"http://www.baidu.com",
+      "description":"这是描述来的",
+      "order":50,
+      "isshow":1
+    },
+    {
+      "id": 1,
+      "title":"品牌1",
+      "url":"http://www.baidu.com",
+      "description":"这是描述来的",
+      "order":50,
+      "isshow":1
+    },
+    {
+      "id": 1,
+      "title":"品牌1",
+      "url":"http://www.baidu.com",
+      "description":"这是描述来的",
+      "order":50,
+      "isshow":1
+    },
+    {
+      "id": 1,
+      "title":"品牌1",
+      "url":"http://www.baidu.com",
+      "description":"这是描述来的",
+      "order":50,
+      "isshow":1
+    },
+    {
+      "id": 1,
+      "title":"品牌1",
+      "url":"http://www.baidu.com",
+      "description":"这是描述来的",
+      "order":50,
+      "isshow":1
+    }
+  ]
+}

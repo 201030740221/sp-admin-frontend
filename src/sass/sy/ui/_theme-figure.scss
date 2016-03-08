@@ -1,0 +1,56 @@
+//主题搭配可移动标签
+figure {
+    word-wrap: break-word;
+    word-break: break-all;
+
+    $color_black: #3a3a3a ;  // 大、小标题颜色、内容主要颜色
+    $color_gray: #7d7d7d ;
+    $color_gold: #e6be99 ;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    cursor: pointer;
+
+
+    position: absolute;
+    padding: 10px 18px;
+    color: #fff;
+    background: $color_gold;
+
+    h6 {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+        &:before {
+            content: "+";
+            position: relative;
+            top: -3px;
+            margin-right: 3px;
+            font-size: 8px;
+        }
+    }
+
+    .detail {
+        display: none;
+        margin-top: 10px;
+        max-width: 172px;
+    }
+
+    &.active {
+        background: #fff;
+        background: rgba(255, 255, 255, 0.7);
+        color: $color_black;
+
+        h6 {
+            &:before {
+                content: "-";
+            }
+        }
+
+        .detail {
+            display: block;
+        }
+    }
+}

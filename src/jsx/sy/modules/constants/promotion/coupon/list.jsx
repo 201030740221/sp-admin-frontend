@@ -1,0 +1,7 @@
+var constants = {
+    GET_COUPON_LIST: "GET_COUPON_LIST",
+    GET_COUPON_DETAIL: "GET_COUPON_DETAIL",
+    DELETE_COUPON_DETAIL: "DELETE_COUPON_DETAIL"
+};
+
+module.exports = constants;

@@ -1,0 +1,83 @@
+/* REQUIRED: DO NOT REMOVE */
+@import "../../global/sass/rubix/overrides/variables";
+@import "../../global/sass/vendor/bootstrap/bootstrap";
+@import "../../global/sass/vendor/sass-list-maps/sass-list-maps";
+
+@import "../../global/sass/rubix/base/base";
+@import "../../global/sass/rubix/layout/layout";
+@import "../../global/sass/rubix/module/module";
+
+/* THIRD-PARTY PLUGINS (CAN BE REMOVED) */
+@import "../../global/sass/vendor/prism/prism";
+@import "../../global/sass/vendor/ion/tabs";
+@import "../../global/sass/vendor/ion/rangeSlider";
+@import "../../global/sass/vendor/hubspot/vex";
+@import "../../global/sass/vendor/hubspot/messenger";
+@import "../../global/sass/vendor/timeline/timeline";
+@import "../../global/sass/vendor/bootstrap-slider/bootstrap-slider";
+@import "../../global/sass/vendor/xeditable/xeditable";
+@import "../../global/sass/vendor/typeahead/typeahead";
+@import "../../global/sass/vendor/select2/select2";
+@import "../../global/sass/vendor/jquery-steps/jquery-steps";
+@import "../../global/sass/vendor/tablesaw/tablesaw";
+@import "../../global/sass/vendor/datatables/datatables";
+@import "../../global/sass/vendor/fullcalendar/fullcalendar";
+@import "../../global/sass/vendor/fullcalendar/fullcalendar-print";
+@import "../../global/sass/vendor/nestable/nestable";
+@import "../../global/sass/vendor/dropzone/dropzone";
+@import "../../global/sass/vendor/jcrop/jcrop";
+@import "../../global/sass/vendor/bootstrap-datetimepicker/bootstrap-datetimepicker";
+@import "../../global/sass/vendor/c3js/c3js";
+@import "../../global/sass/vendor/leaflet/leaflet";
+@import "../../global/sass/vendor/blueimp-gallery/blueimp-gallery";
+@import "../../global/sass/vendor/trumbowyg/trumbowyg";
+@import "../../global/sass/vendor/switchery/switchery";
+
+@import "./variables";
+/* IMPORT PAGE STYLES */
+@import "pages/pages";
+/* IMPORT PRINT STYLES */
+@import "print/print";
+@import "./util";
+@import "ui/progress";
+@import "ui/datepicker";
+@import "ui/preloader";
+@import "ui/alert-modal";
+@import "ui/collocation";
+@import "ui/theme-figure";
+@import "ui/pre-sale";
+@import "ui/spots-scenes-item";
+@import "./variety-class";
+
+html[dir='rtl'] {
+  [class^="icon-"].float-right-rtl,
+  [class*=" icon-"].float-right-rtl {
+    position: relative;
+    /*@noflip*/float: right;
+  }
+}
+
+body {
+  opacity: 1;
+  transition: all 0.7s ease;
+
+  &.fade-out {
+    transition: all 0.25s ease;
+    opacity: 0;
+  }
+}
+
+table {
+  word-break: break-word;
+}
+
+a {
+  cursor: pointer;
+}
+.color-orange{
+  color: #FA824F;
+  &:hover{
+    color: #FA824F;
+    border-bottom: 1px solid #FA824F;
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "status": 1,
+  "data":[
+    {
+      "id":"1",
+      "title":"商品1",
+      "shopnumber":"ECS000032",
+      "price":"302.00",
+      "added": 1,
+      "order": 50,
+      "inventory": 1533
+    },
+    {
+      "id":"2",
+      "title":"商品2",
+      "shopnumber":"ECS000032",
+      "price":"302.00",
+      "added": 1,
+      "order": 50,
+      "inventory": 152
+    },
+    {
+      "id":"3",
+      "title":"商品1",
+      "shopnumber":"ECS000032",
+      "price":"302.00",
+      "added": 1,
+      "order": 50,
+      "inventory": 152
+    },
+    {
+      "id":"4",
+      "title":"商品1",
+      "shopnumber":"ECS000032",
+      "price":"302.00",
+      "added": 1,
+      "order": 50,
+      "inventory": 152
+    },
+    {
+      "id":"5",
+      "title":"商品1",
+      "shopnumber":"ECS000032",
+      "price":"302.00",
+      "added": 1,
+      "order": 50,
+      "inventory": 152
+    },
+    {
+      "id":"6",
+      "title":"商品1",
+      "shopnumber":"ECS000032",
+      "price":"302.00",
+      "added": 1,
+      "order": 50,
+      "inventory": 152
+    },
+    {
+      "id":"7",
+      "title":"商品1",
+      "shopnumber":"ECS000032",
+      "price":"302.00",
+      "added": 1,
+      "order": 50,
+      "inventory": 152
+    },
+    {
+      "id":"8",
+      "title":"商品1",
+      "shopnumber":"ECS000032",
+      "price":"302.00",
+      "added": 1,
+      "order": 50,
+      "inventory": 152
+    },
+    {
+      "id":"9",
+      "title":"商品1",
+      "shopnumber":"ECS000032",
+      "price":"302.00",
+      "added": 1,
+      "order": 50,
+      "inventory": 152
+    },
+    {
+      "id":"10",
+      "title":"商品1",
+      "shopnumber":"ECS000032",
+      "price":"302.00",
+      "added": 1,
+      "order": 50,
+      "inventory": 152
+    }
+  ]
+}

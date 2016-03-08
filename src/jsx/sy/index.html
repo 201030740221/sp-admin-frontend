@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="default" dir="{dir}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <title>斯品管理后台</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link media="screen" rel="stylesheet" type="text/css" href="/css/vendor/pace/pace.css"/>
+    <link media="screen" rel="stylesheet" type="text/css" href="/css/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/css/vendor/morris/morris.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/js/vendor/webuploader-0.1.5/webuploader.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/css/fonts/{app}/fonts.css">
+    {stylesheets}
+    <script>
+        var hostname = location.hostname;
+        var isProduction = hostname.indexOf("admin.sipin.com") != -1;
+        //var host = "http://admin.sipin.frontend";
+        //var host = "http://admin.sipin.frank";
+        // var host = "http://admin.sipin.kent:8000"; // 后台路径
+        // var host = "http://admin.sipin.melo"; // 后台路径 //@tofishes TODO
+        // var host = "http://admin.sipin.alvin"; // 后台路径 //@tofishes TODO
+        var host = "http://admin.sipin.latest.dev.e.sipin.one";
+        //var host = 'http://admin.sipin.jerry:8888';
+        var frontHost = "http://sipin.com"; // 前台路径
+        var template_url = {  // 模板路径
+            sofa: "template/sofaTpl.html",
+            bed: "template/bedTpl.html",
+            invoice: "template/invoice.html" // 出货单模板 @tofishes
+        };
+
+        if (isProduction) {
+            host = "http://admin.sipin.com:"+location.port;
+            frontHost = "http://www.sipin.com";
+        }
+
+//        var SipinCssUrl = "http://www.sipin.test/static/css/admin-css/common.css";
+        //var SipinCssUrl = "http://localhost:9100/css/admin-css/style.css";
+        var SipinCssUrl = "http://www.sipin.com/css/admin-css/style.css";
+    </script>
+</head>
+<body class="fade-out" data-version="{version}">
+<div id="pace-loader" class="pace-big"></div>
+<div id="app-preloader"></div>
+<div id="app-container"></div>
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+<div class="app-modal"></div>
+
+<script type="text/javascript" src="/js/vendor/pace/pace.js"></script>
+<script type="text/javascript" src="/js/polyfills/html5shiv.js"></script>
+<script type="text/javascript" src="/js/polyfills/modernizr.min.js"></script>
+<script type="text/javascript" src="/js/vendor/eventemitter2/eventemitter2.min.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery/jquery.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript" src="/js/vendor/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="/js/vendor/p-scrollbar/min/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="/js/vendor/ion.tabs/ion.tabs.min.js"></script>
+<script type="text/javascript" src="/js/vendor/ion.rangeSlider/ion.rangeSlider.min.js"></script>
+<script type="text/javascript" src="/js/vendor/bootstrap-slider/bootstrap-slider.js"></script>
+<script type="text/javascript" src="/js/vendor/sparklines/sparklines.js"></script>
+<script type="text/javascript" src="/js/vendor/moment/moment.js"></script>
+<script type="text/javascript" src="/js/vendor/select2/select2.js"></script>
+<script type="text/javascript" src="/js/vendor/xeditable/xeditable.js"></script>
+<script type="text/javascript" src="/js/vendor/typeahead/typeahead.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery-steps/jquery-steps.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery-validate/jquery-validate.js"></script>
+<script type="text/javascript" src="/js/vendor/tablesaw/tablesaw.js"></script>
+<script type="text/javascript" src="/js/vendor/datatables/datatables.js"></script>
+<script type="text/javascript" src="/js/vendor/fullcalendar/fullcalendar.js"></script>
+<script type="text/javascript" src="/js/vendor/nestable/nestable.js"></script>
+<script type="text/javascript" src="/js/vendor/dropzone/dropzone.js"></script>
+<script type="text/javascript" src="/js/vendor/jcrop/color.js"></script>
+<script type="text/javascript" src="/js/vendor/jcrop/jcrop.js"></script>
+<script type="text/javascript" src="/js/vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="/js/vendor/blueimp-gallery/blueimp-gallery.js"></script>
+<script type="text/javascript" src="/js/vendor/chartjs/chartjs.js"></script>
+<script type="text/javascript" src="/js/vendor/c3js/c3js.js"></script>
+<script type="text/javascript" src="/js/vendor/leaflet/leaflet.js"></script>
+<script type="text/javascript" src="/js/vendor/l20n/l20n.js"></script>
+<script type="text/javascript" src="/js/vendor/trumbowyg/trumbowyg.js"></script>
+<script type="text/javascript" src="/js/common/react/react.js"></script>
+<script type="text/javascript" src="/js/common/rrouter/rrouter.js"></script>
+<script type="text/javascript" src="/js/common/react-bootstrap/react-bootstrap.js"></script>
+<script type="text/javascript" src="/js/common/react-l20n/react-l20n.min.js"></script>
+<script type="text/javascript" src="/js/common/react-responsive/react-responsive.js"></script>
+<script type="text/javascript" src="/js/vendor/d3/d3.js"></script>
+<script type="text/javascript" src="/js/common/rubix/rubix.js"></script>
+<script type="text/javascript" src="/js/vendor/raphael/raphael.js"></script>
+<script type="text/javascript" src="/js/vendor/morris/morris.js"></script>
+<script type="text/javascript" src="/js/vendor/prism/prism.js"></script>
+<script type="text/javascript" src="/js/vendor/messenger/messenger.min.js"></script>
+<!--<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="/js/vendor/gmaps/gmaps.js"></script>-->
+<script type="text/javascript" src="/js/vendor/holder/holder.js"></script>
+<!--ueditor-->
+<!-- 配置文件 -->
+<script type="text/javascript" src="/js/vendor/ueditor1.4.3/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/js/vendor/ueditor1.4.3/ueditor.all.js"></script>
+<!--ueditor end-->
+<!--fex webuploader-0.1.5-->
+<script type="text/javascript" src="/js/vendor/webuploader-0.1.5/webuploader.js"></script>
+<!--fex webuploader-0.1.5 end-->
+<!--fex handlebars-v3.0.0.js-->
+<script type="text/javascript" src="/js/vendor/handlebars-v3.0.0.js/handlebars-v3.0.0.js"></script>
+<!--fex handlebars-v3.0.0.js end-->
+<script type="text/javascript" src="/js/{app}/{app}.js"></script>
+<!-- @tofishes jquery-validation -->
+<script type="text/javascript" src="/js/vendor/validation/jquery.validate.min.js"></script>
+</body>
+</html>

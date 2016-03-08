@@ -1,0 +1,54 @@
+.collocation-category{
+    margin: .2em 0;
+    position: relative;
+    width: 100%;
+    line-height: 2em;
+    border-radius: 5px;
+    background: #A0C7F2;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 .5em;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.collocation-tags{
+    margin: 0;
+    padding: 0;
+    &.inline-block{
+        display: inline-block;
+    }
+    li{
+        position: relative;
+        display: inline-block;
+        min-width: 4em;
+        line-height: 2em;
+        margin: .2em 0;
+        margin-right:2em;
+        padding:0 1em;
+        border-radius: 5px;
+        border: 1px solid #0e74af;
+        color: #0e74af;
+        background: #fff;
+        cursor: pointer;
+        text-align: center;
+        &.active{
+            color: #fff;
+            background: #0e74af;
+          &.add-tag{
+             background: #E2980C;
+             border: 1px solid #E2980C;
+          }
+
+        }
+    }
+    &.can-delete li{
+        padding:0 2em 0 1em;
+    }
+    .rubix-icon{
+        position: absolute;
+        right: .5em;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

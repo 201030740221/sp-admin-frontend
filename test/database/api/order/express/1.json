@@ -1,0 +1,16 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [],
+     "reqError": [],
+     "docError": [
+          "接口文档缺少［order_id］做为请求参数",
+          "接口文档缺少［partner_id］做为请求参数",
+          "接口文档缺少［express_no］做为请求参数"
+     ],
+     "interfaceUrl": "/api/order/express/1.json",
+     "interfaceName": "/api/order/express/1.json",
+     "lazyLoad": "no",
+     "responseParametersType": true,
+     "responseJson": "{\"code\":0,\"msg\":\"成功\",\"data\":{\"id\":1,\"partner_id\":1,\"express_no\":\"news1238712837189376897\",\"created_by\":null,\"modified_by\":null,\"created_at\":\"2015-03-10 17:06:35\",\"updated_at\":\"2015-03-10 17:06:35\",\"deleted_at\":null,\"express_partner\":\"卡行天下\",\"values\":[]}}"
+}
